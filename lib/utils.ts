@@ -75,6 +75,16 @@ export function formatAmount(amount: number): string {
   return formatter.format(amount);
 }
 
+export function formatAmountRupiah(amount: number): string {
+  const formatter = new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0, // Rupiah typically doesn't use decimal places
+  });
+
+  return formatter.format(amount);
+}
+
 export const parseStringify = (value: any) => JSON.parse(JSON.stringify(value));
 
 export const removeSpecialCharacters = (value: string) => {
