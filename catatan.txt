@@ -13,3 +13,5 @@
     export default page
 
 2. npm install query-string untuk menampilkan return ultils
+3. untuk animasi couter uang install npm install react-countup
+4. Untuk chart npm install chart.js dan npm install react-chartjs-2
